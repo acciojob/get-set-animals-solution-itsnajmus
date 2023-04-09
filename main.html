@@ -8,7 +8,26 @@
 
 <body>
 	<!-- the entire body must be written by student -->
-	
+	<h1>Animal Sounds</h1>
+  <ul>
+    <li id="cat"></li>
+    <li id="dog"></li>
+  </ul>
+
+  <script type="text/javascript" src="./script.js"></script>
+  <script type="text/javascript">
+    const catElement = document.getElementById("cat");
+    const dogElement = document.getElementById("dog");
+
+    const cat = new Cat("cat");
+    catElement.innerHTML = "The " + cat.species + " says ";
+    cat.purr();
+    catElement.innerHTML += "purr";
+
+    const dog = new Dog("dog");
+    dogElement.innerHTML = "The " + dog.species + " says ";
+    dog.bark();
+    dogElement.innerHTML += "woof";
 
 
     <script type="text/javascript" src="./script.js">
